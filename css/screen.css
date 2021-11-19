@@ -11,13 +11,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* (target ÷ context = result) */
 
 /* Base Styles */
-a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: #AAA;
-  text-decoration-style: solid;
-  text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
-}
 html {
   background-color: #cfcfc4;
   color: #333;
@@ -45,6 +38,17 @@ h4 {
   font-size: 1.3888888889em; /* 25 / 18 = 1.3888888889 */
   line-height: 1.2em; /* 30 / 25 = 1.2 */
 }
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #AAA;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
+}
+figcaption {
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  position: static;
+}
 p,
 nav,
 ul {
@@ -62,10 +66,7 @@ ul li:last-child ul:last-child {
   position: absolute;
   left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
 }
-#contact h3 {
-  position: absolute;
-  left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
-}
+
 /* Module Styles */
 .college-extra li,
 .exp-skills li,
@@ -146,8 +147,22 @@ ul li:last-child ul:last-child {
     justify-content: center;
   }
   #contact ul > li {
-    flex: 1 0 max-content;
+    flex: 1 0 auto;
     text-align: center;
+  }
+}
+/* 970 / 16 = 60.625 */
+@media screen and (min-width: 60.625em) {
+   #contact {
+    display: flex;
+    justify-content: space-between;
+  }
+   #contact ul {
+    border-top: 0;
+    padding-top: 1.3333333333em; /* 24 / 18 = 1.3333333333 */ */
+  }
+   #contact ul {
+    margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */ */
   }
 }
 /* 420 / 16 = 26.25 */
@@ -157,7 +172,7 @@ ul li:last-child ul:last-child {
     justify-content: center;
   }
   #navigation ul > li {
-    flex: 1 0 max-content;
+    flex: 1 0 auto;
     text-align: center;
   }
 }
