@@ -19,7 +19,6 @@ html {
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
-
 h1 {
   font-size: 3.1612777778em; /* 56.903 / 18 = 3.1612777778 */
   line-height: 1.0368521871em; /* 59/ 56.903 = 1.0368521871 */
@@ -41,15 +40,9 @@ h4 {
   font-size: 1.3888888889em; /* 25 / 18 = 1.3888888889 */
   line-height: 1.2em; /* 30 / 25 = 1.2 */
 }
-figure {
-  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-}
-figcaption {
-  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-}
+
 p,
-ul,
-nav {
+ul {
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
 /* Layout Styles */
@@ -73,8 +66,12 @@ nav {
   font-style: italic;
 }
 #header {
-  background-color: inherit;
+  background-color: #82826F;
   color: inherit;
+  margin: -1.3333333333em -1.3333333333em 1.3333333333em -1.3333333333em;
+  /* 24 / 18 = 1.3333333333 */
+  padding: 1.3333333333em 1.3333333333em 0 1.3333333333em;
+  /* 24 / 18 = 1.3333333333 */
   text-align: center;
 }
 #navigation {
@@ -127,4 +124,5 @@ nav {
     text-align: center;
   }
 }
+
 /* Theme Styles */
