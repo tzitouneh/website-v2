@@ -43,7 +43,8 @@ h1 {
 }
 #navigation a:hover,
 #navigation a:active,
-#navigation a:focus {
+#navigation a:focus,
+#about #nav-about {
   background-color: #777;
 }
 #navigation li {
