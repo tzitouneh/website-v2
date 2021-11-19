@@ -7,3 +7,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+
+/* Accessibly hide certain elements */
+.no-bullet,
+#navigation h2 {
+  position: absolute;
+  left: -20000px;
+}
