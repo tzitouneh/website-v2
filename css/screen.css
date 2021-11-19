@@ -19,21 +19,42 @@ html {
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
+
 h1 {
   font-size: 3.1612777778em; /* 56.903 / 18 = 3.1612777778 */
   line-height: 1.0368521871em; /* 59/ 56.903 = 1.0368521871 */
+  padding-bottom: 0.4217703812em; /* 24 / 56.903 = 0.4217703812 */
 }
 h2 {
   font-size: 2.5em; /* 45 / 18 = 2.5 */
   line-height: 1.1111111111em; /* 50 / 45 = 1.1111111111 */
+  padding-bottom: 0.5333333333em; /* 24 / 45 = 0.5333333333 */
 }
 h3 {
   font-size: 1.778em; /* 32.004 / 18 = 1.778 */
   line-height: 1.1248593926em; /* 36 / 32.004 = 1.1248593926 */
+  border-bottom: solid;
+  border-width: 0.03124609424em; /* 1 / 32.004 = 0.03124609424 */
+  border-color: #111;
 }
 h4 {
   font-size: 1.3888888889em; /* 25 / 18 = 1.3888888889 */
   line-height: 1.2em; /* 30 / 25 = 1.2 */
+}
+audio {
+  display: block;
+  max-width: 100%;
+}
+figure {
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
+figcaption {
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
+p,
+ul,
+nav {
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
 /* Layout Styles */
 #navigation h2 {
@@ -62,7 +83,7 @@ h4 {
   color: #EEE;
   display: block;
   line-height: 0;
-  padding: 1.5em; /* 24 / 16 = 1.5 */
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   text-decoration: none;
 }
 #navigation a:hover,
