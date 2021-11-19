@@ -12,8 +12,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Base Styles */
 html {
-  background-color: #EEE;
-  color: #111;
+  background-color: #cfcfc4;
+  color: #333;
   font-family: Helvetica, Arial, Georgia, "Time New Roman", Times, Menlo, serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
@@ -41,10 +41,6 @@ h4 {
   font-size: 1.3888888889em; /* 25 / 18 = 1.3888888889 */
   line-height: 1.2em; /* 30 / 25 = 1.2 */
 }
-audio {
-  display: block;
-  max-width: 100%;
-}
 figure {
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
@@ -66,6 +62,12 @@ nav {
   left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
 }
 /* Module Styles */
+.college-extra li,
+.exp-skills li {
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  list-style: disc;
+  margin-left: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
 .college-info li,
 .exp-info li {
   font-style: italic;
@@ -80,6 +82,9 @@ nav {
 }
 #navigation a {
   background-color: #444;
+  border-style: solid;
+  border-color: #EEE;
+  border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
   color: #EEE;
   display: block;
   line-height: 0;
@@ -97,7 +102,18 @@ nav {
 #navigation li {
   margin-bottom: 0.3125em; /* 5 / 16 = 0.3125 */
 }
-
+#summary li,
+#personal li {
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  list-style: disc;
+  margin-left: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
+#citation {
+  font-size: 0.7222222222em; /* 13 / 18 = 0.7222222222 */
+}
+#footer {
+  font-size: 0.8333333333em; /* 15 / 18 = 0.8333333333 */
+}
 /* State Styles */
 /* Context is ALWAYS 16px for Media Queries */
 /* 420 / 16 = 26.25 */
