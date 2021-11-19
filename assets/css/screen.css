@@ -7,6 +7,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/* Accessibly hide certain elements */
+.no-bullet,
+#navigation h2 {
+  position: absolute;
+  left: -20000px;
+}
+
+/* Base Styles */
 html {
   background-color: #EEE;
   color: #111;
@@ -18,13 +27,6 @@ html {
 h1 {
   font-size: 32.004px;
   line-height: 36px;
-}
-
-/* Accessibly hide certain elements */
-.no-bullet,
-#navigation h2 {
-  position: absolute;
-  left: -20000px;
 }
 
 /* Layout Styles */
@@ -44,9 +46,9 @@ h1 {
 #navigation a:hover,
 #navigation a:active,
 #navigation a:focus,
-#about #nav-about,
+#home #nav-home,
 #resume #nav-resume,
-#hobbies #nav-hobbies {
+#about #nav-about {
   background-color: #777;
 }
 #navigation li {
@@ -62,3 +64,5 @@ h1 {
     flex: 1 0 auto;
   }
 }
+
+/* Theme Styles */
