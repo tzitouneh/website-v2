@@ -39,7 +39,14 @@ h4 {
 }
 
 /* Module Styles */
-
+.college-extra li,
+.exp-skills li {
+  list-style: disc;
+}
+.college-info li,
+.exp-info li {
+  font-style: italic;
+}
 #header {
   background-color: inherit;
   color: inherit;
