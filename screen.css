@@ -26,3 +26,19 @@ h1 {
   position: absolute;
   left: -20000px;
 }
+
+/* Layout Styles */
+
+/* Modular Styles */
+#navigation {
+  font-family: Menlo, Helvitica, Arial, serif;
+}
+#navigation a {
+  background-color: #444;
+  color: #EEE;
+  display: block;
+  text-decoration: none;
+}
+#navigation li {
+  margin-bottom: 5px;
+}
