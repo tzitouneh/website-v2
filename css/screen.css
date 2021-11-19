@@ -45,8 +45,11 @@ a {
   text-decoration-style: solid;
   text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
 }
-figcaption {
+figure {
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
+figcaption {
+  padding-bottom: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   position: static;
 }
 p,
@@ -63,6 +66,10 @@ ul li:last-child ul:last-child {
 
 /* Layout Styles */
 #navigation h2 {
+  position: absolute;
+  left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
+}
+#unique h2 {
   position: absolute;
   left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
 }
@@ -83,23 +90,6 @@ ul li:last-child ul:last-child {
 #citation {
   font-size: 0.7222222222em; /* 13 / 18 = 0.7222222222 */
 }
-#contact a {
-  background-color: #444;
-  border-style: solid;
-  border-color: #EEE;
-  border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
-  color: #EEE;
-  display: block;
-  line-height: 0;
-  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-  text-decoration: none;
-}
-#contact a:hover,
-#contact a:active,
-#contact a:focus {
-  background-color: #777;
-}
-
 #footer {
   font-size: 0.8333333333em; /* 15 / 18 = 0.8333333333 */
 }
@@ -111,6 +101,17 @@ ul li:last-child ul:last-child {
   padding: 1.3333333333em 1.3333333333em 0 1.3333333333em;
   /* 24 / 18 = 1.3333333333 */
   text-align: center;
+}
+#contact a {
+  background-color: #444;
+  border-style: solid;
+  border-color: #EEE;
+  border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
+  color: #EEE;
+  display: block;
+  line-height: 0;
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  text-decoration: none;
 }
 #navigation {
   font-family: Menlo, Helvetica, Arial, serif;
@@ -126,9 +127,14 @@ ul li:last-child ul:last-child {
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   text-decoration: none;
 }
-#navigation a:hover,
+#contact a:active,
+#contact a:focus,
+#contact a:hover {
+  background-color: #777;
+}
 #navigation a:active,
 #navigation a:focus,
+#navigation a:hover,
 #home #nav-home,
 #resume #nav-resume,
 #about #nav-about {
@@ -153,16 +159,16 @@ ul li:last-child ul:last-child {
 }
 /* 970 / 16 = 60.625 */
 @media screen and (min-width: 60.625em) {
-   #contact {
+  #contact {
     display: flex;
     justify-content: space-between;
   }
-   #contact ul {
-    border-top: 0;
-    padding-top: 1.3333333333em; /* 24 / 18 = 1.3333333333 */ */
+  #contact a {
+    margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */
   }
-   #contact ul {
-    margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */ */
+  #contact ul {
+    border-top: 0;
+    padding-top: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   }
 }
 /* 420 / 16 = 26.25 */
