@@ -8,13 +8,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
-/* Accessibly hide certain elements */
-.no-bullet,
-#navigation h2 {
-  position: absolute;
-  left: -20000px;
-}
-
 /* Base Styles */
 html {
   background-color: #EEE;
@@ -30,6 +23,11 @@ h1 {
 }
 
 /* Layout Styles */
+.no-bullet,
+#navigation h2 {
+  position: absolute;
+  left: -20000px;
+}
 
 /* Module Styles */
 #navigation {
