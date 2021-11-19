@@ -8,38 +8,41 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* (target ÷ context = result) */
+
 /* Base Styles */
 html {
   background-color: #EEE;
   color: #111;
   font-family: Helvetica, Arial, Georgia, "Time New Roman", Times, Menlo, serif;
-  font-size: 18px; /*  */
-  line-height: 24px; /*  */
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
 h1 {
-  font-size: 56.903px; /*  */
-  line-height: 59px; /*  */
+  font-size: 3.1612777778em; /* 56.903 / 18 = 3.1612777778 */
+  line-height: 1.0368521871em; /* 59/ 56.903 = 1.0368521871 */
 }
 h2 {
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 2.5em; /* 45 / 18 = 2.5 */
+  line-height: 1.1111111111em; /* 50 / 45 = 1.1111111111 */
 }
 h3 {
-  font-size: 32.004px;
-  line-height: 36px;
+  font-size: 1.778em; /* 32.004 / 18 = 1.778 */
+  line-height: 1.1248593926em; /* 36 / 32.004 = 1.1248593926 */
 }
 h4 {
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.3888888889em; /* 25 / 18 = 1.3888888889 */
+  line-height: 1.2em; /* 30 / 25 = 1.2 */
 }
 /* Layout Styles */
 #navigation h2 {
   position: absolute;
-  left: -20000px; /*  */
+  left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
 }
 #contact h3 {
   position: absolute;
-  left: -20000px;
+  left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
 }
 /* Module Styles */
 .college-info li,
@@ -59,7 +62,7 @@ h4 {
   color: #EEE;
   display: block;
   line-height: 0;
-  padding: 24px; /*  */
+  padding: 1.5em; /* 24 / 16 = 1.5 */
   text-decoration: none;
 }
 #navigation a:hover,
@@ -71,12 +74,13 @@ h4 {
   background-color: #777;
 }
 #navigation li {
-  margin-bottom: 5px; /*  */
+  margin-bottom: 0.3125em; /* 5 / 16 = 0.3125 */
 }
 
 /* State Styles */
-/*  */
-@media screen and (min-width: 420px) {
+/* Context is ALWAYS 16px for Media Queries */
+/* 420 / 16 = 26.25 */
+@media screen and (min-width: 26.25em) {
   #navigation ul {
     display: flex;
     justify-content: center;
