@@ -23,13 +23,17 @@ h1 {
 }
 
 /* Layout Styles */
-.no-bullet,
 #navigation h2 {
   position: absolute;
   left: -20000px; /*  */
 }
 
 /* Module Styles */
+#header {
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+}
 #navigation {
   font-family: Menlo, Helvetica, Arial, serif;
 }
@@ -54,12 +58,15 @@ h1 {
 }
 
 /* State Styles */
+/*  */
 @media screen and (min-width: 420px) {
   #navigation ul {
     display: flex;
+    justify-content: center;
   }
   #navigation ul > li {
     flex: 1 0 auto;
+    text-align: center;
   }
 }
 
