@@ -37,12 +37,11 @@ h4 {
   position: absolute;
   left: -20000px; /*  */
 }
-
-/* Module Styles */
-.college-extra li,
-.exp-skills li {
-  list-style: disc;
+#contact h3 {
+  position: absolute;
+  left: -20000px;
 }
+/* Module Styles */
 .college-info li,
 .exp-info li {
   font-style: italic;
@@ -87,5 +86,4 @@ h4 {
     text-align: center;
   }
 }
-
 /* Theme Styles */
