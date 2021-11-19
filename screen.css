@@ -52,3 +52,13 @@ h1 {
 #navigation li {
   margin-bottom: 5px;
 }
+
+/* State Styles */
+@media screen and (min-width: 420px) {
+  #navigation ul {
+    display: flex;
+  }
+  #navigation ul > li {
+    flex: 1 0 auto;
+  }
+}
