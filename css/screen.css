@@ -11,6 +11,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* (target ÷ context = result) */
 
 /* Base Styles */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #AAA;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
+}
 html {
   background-color: #cfcfc4;
   color: #333;
@@ -22,12 +29,10 @@ html {
 h1 {
   font-size: 3.1612777778em; /* 56.903 / 18 = 3.1612777778 */
   line-height: 1.0368521871em; /* 59/ 56.903 = 1.0368521871 */
-  padding-bottom: 0.4217703812em; /* 24 / 56.903 = 0.4217703812 */
 }
 h2 {
   font-size: 2.5em; /* 45 / 18 = 2.5 */
   line-height: 1.1111111111em; /* 50 / 45 = 1.1111111111 */
-  padding-bottom: 0.5333333333em; /* 24 / 45 = 0.5333333333 */
 }
 h3 {
   font-size: 1.778em; /* 32.004 / 18 = 1.778 */
@@ -41,13 +46,17 @@ h4 {
   line-height: 1.2em; /* 30 / 25 = 1.2 */
 }
 p,
-ul,
-nav {
+nav,
+ul {
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
 }
 nav ul {
-  padding-bottom: 0;
+  padding: 0;
 }
+ul li:last-child ul:last-child {
+  padding: 0;
+}
+
 /* Layout Styles */
 #navigation h2 {
   position: absolute;
@@ -59,7 +68,9 @@ nav ul {
 }
 /* Module Styles */
 .college-extra li,
-.exp-skills li {
+.exp-skills li,
+.sum li,
+.extra li {
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   list-style: disc;
   margin-left: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
@@ -67,6 +78,29 @@ nav ul {
 .college-info li,
 .exp-info li {
   font-style: italic;
+}
+#citation {
+  font-size: 0.7222222222em; /* 13 / 18 = 0.7222222222 */
+}
+#contact a {
+  background-color: #444;
+  border-style: solid;
+  border-color: #EEE;
+  border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
+  color: #EEE;
+  display: block;
+  line-height: 0;
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  text-decoration: none;
+}
+#contact a:hover,
+#contact a:active,
+#contact a:focus {
+  background-color: #777;
+}
+
+#footer {
+  font-size: 0.8333333333em; /* 15 / 18 = 0.8333333333 */
 }
 #header {
   background-color: #82826F;
@@ -76,6 +110,9 @@ nav ul {
   padding: 1.3333333333em 1.3333333333em 0 1.3333333333em;
   /* 24 / 18 = 1.3333333333 */
   text-align: center;
+}
+#info h2 {
+  padding-bottom: 0;
 }
 #navigation {
   font-family: Menlo, Helvetica, Arial, serif;
@@ -102,26 +139,20 @@ nav ul {
 #navigation li {
   margin-bottom: 0.3125em; /* 5 / 16 = 0.3125 */
 }
-#info h2 {
-  padding-bottom: 0;
-}
-#audio figure {
-  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-}
-#summary li,
-#personal li {
-  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-  list-style: disc;
-  margin-left: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-}
-#citation {
-  font-size: 0.7222222222em; /* 13 / 18 = 0.7222222222 */
-}
-#footer {
-  font-size: 0.8333333333em; /* 15 / 18 = 0.8333333333 */
-}
+
 /* State Styles */
 /* Context is ALWAYS 16px for Media Queries */
+/* 610 / 16 = 38.125 */
+@media screen and (min-width: 38.125em) {
+  #contact ul {
+    display: flex;
+    justify-content: center;
+  }
+  #contact ul > li {
+    flex: 1 0 max-content;
+    text-align: center;
+  }
+}
 /* 420 / 16 = 26.25 */
 @media screen and (min-width: 26.25em) {
   #navigation ul {
@@ -129,7 +160,7 @@ nav ul {
     justify-content: center;
   }
   #navigation ul > li {
-    flex: 1 0 auto;
+    flex: 1 0 max-content;
     text-align: center;
   }
 }
