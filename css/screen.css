@@ -16,12 +16,22 @@ html {
   font-size: 18px; /*  */
   line-height: 24px; /*  */
 }
-
 h1 {
-  font-size: 32.004px; /*  */
-  line-height: 36px; /*  */
+  font-size: 56.903px; /*  */
+  line-height: 59px; /*  */
 }
-
+h2 {
+  font-size: 45px;
+  line-height: 50px;
+}
+h3 {
+  font-size: 32.004px;
+  line-height: 36px;
+}
+h4 {
+  font-size: 25px;
+  line-height: 30px;
+}
 /* Layout Styles */
 #navigation h2 {
   position: absolute;
@@ -29,6 +39,7 @@ h1 {
 }
 
 /* Module Styles */
+
 #header {
   background-color: inherit;
   color: inherit;
