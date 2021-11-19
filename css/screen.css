@@ -111,9 +111,6 @@ ul li:last-child ul:last-child {
   /* 24 / 18 = 1.3333333333 */
   text-align: center;
 }
-#info h2 {
-  padding-bottom: 0;
-}
 #navigation {
   font-family: Menlo, Helvetica, Arial, serif;
 }
