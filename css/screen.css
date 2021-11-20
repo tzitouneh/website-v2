@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* (target ÷ context = result) */
 
-/* Base Styles */
+/* ===== BASE STYLES ===== */
 html {
   background-color: #cfcfc4;
   color: #333;
@@ -52,6 +52,7 @@ figcaption {
   padding-bottom: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   position: static;
 }
+article,
 p,
 nav,
 ul {
@@ -64,21 +65,11 @@ ul li:last-child ul:last-child {
   padding: 0;
 }
 
-/* Layout Styles */
-#navigation h2 {
-  position: absolute;
-  left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
-}
-#unique h2 {
-  position: absolute;
-  left: -1111.111111111111111em; /* -20000 / 18 = -1111.111111111111111 */
-}
+/* ===== LAYOUT STYLES ===== */
 
-/* Module Styles */
+/* ===== MODULAR STYLES ===== */
 .college-extra li,
-.exp-skills li,
-.sum li,
-.extra li {
+.exp-skills li {
   line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   list-style: disc;
   margin-left: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
@@ -89,6 +80,17 @@ ul li:last-child ul:last-child {
 }
 #citation {
   font-size: 0.7222222222em; /* 13 / 18 = 0.7222222222 */
+}
+#contact a {
+  background-color: #444;
+  border-style: solid;
+  border-color: #EEE;
+  border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
+  color: #EEE;
+  display: block;
+  line-height: 0;
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  text-decoration: none;
 }
 #footer {
   font-size: 0.8333333333em; /* 15 / 18 = 0.8333333333 */
@@ -101,17 +103,6 @@ ul li:last-child ul:last-child {
   padding: 1.3333333333em 1.3333333333em 0 1.3333333333em;
   /* 24 / 18 = 1.3333333333 */
   text-align: center;
-}
-#contact a {
-  background-color: #444;
-  border-style: solid;
-  border-color: #EEE;
-  border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
-  color: #EEE;
-  display: block;
-  line-height: 0;
-  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-  text-decoration: none;
 }
 #navigation {
   font-family: Menlo, Helvetica, Arial, serif;
@@ -127,11 +118,6 @@ ul li:last-child ul:last-child {
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   text-decoration: none;
 }
-#contact a:active,
-#contact a:focus,
-#contact a:hover {
-  background-color: #777;
-}
 #navigation a:active,
 #navigation a:focus,
 #navigation a:hover,
@@ -143,9 +129,22 @@ ul li:last-child ul:last-child {
 #navigation li {
   margin-bottom: 0.3125em; /* 5 / 16 = 0.3125 */
 }
+#contact a:active,
+#contact a:focus,
+#contact a:hover {
+  background-color: #777;
+}
+#summary li,
+#personal li {
+  line-height: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  list-style: disc;
+  margin-left: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
 
-/* State Styles */
+/* ===== STATE STYLES ===== */
+
 /* Context is ALWAYS 16px for Media Queries */
+
 /* 610 / 16 = 38.125 */
 @media screen and (min-width: 38.125em) {
   #contact ul {
@@ -182,5 +181,3 @@ ul li:last-child ul:last-child {
     text-align: center;
   }
 }
-
-/* Theme Styles */
