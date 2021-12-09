@@ -166,10 +166,6 @@ ul li:last-child ul:last-child {
   #contact a {
     margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */
   }
-  #contact ul {
-    border-top: 0;
-    padding-top: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-  }
 }
 /* 420 / 16 = 26.25 */
 @media screen and (min-width: 444px) {
