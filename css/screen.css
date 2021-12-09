@@ -172,7 +172,7 @@ ul li:last-child ul:last-child {
   }
 }
 /* 420 / 16 = 26.25 */
-@media screen and (min-width: 26.25em) {
+@media screen and (min-width: 444px) {
   #navigation ul {
     display: flex;
     justify-content: center;
