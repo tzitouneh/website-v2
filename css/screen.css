@@ -81,9 +81,6 @@ ul li:last-child ul:last-child {
 #citation {
   font-size: 0.7222222222em; /* 13 / 18 = 0.7222222222 */
 }
-#contact {
-  font-family: Menlo, Helvetica, Arial, serif;
-}
 #contact a {
   background-color: #444;
   border-style: solid;
@@ -91,6 +88,7 @@ ul li:last-child ul:last-child {
   border-width: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
   color: #EEE;
   display: block;
+  font-family: Menlo, Helvetica, Arial, serif;
   line-height: 0;
   padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
   text-decoration: none;
