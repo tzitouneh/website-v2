@@ -158,7 +158,7 @@ ul li:last-child ul:last-child {
   }
 }
 /* 970 / 16 = 60.625 */
-@media screen and (min-width: 60.625em) {
+@media screen and (min-width: 1050px) {
   #contact {
     display: flex;
     justify-content: space-between;
