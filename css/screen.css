@@ -178,7 +178,8 @@ ul li:last-child ul:last-child {
     justify-content: center;
   }
   #navigation ul > li {
-    flex: 1 0 auto;
+    flex: 1 0 max-content;
     text-align: center;
+    max-width: 150px;
   }
 }
