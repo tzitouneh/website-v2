@@ -45,7 +45,9 @@ a {
   text-decoration-style: solid;
   text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
 }
-
+article {
+  padding-bottom: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
 cite {
   font-style: italic;
 }
