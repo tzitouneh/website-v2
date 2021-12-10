@@ -45,6 +45,9 @@ a {
   text-decoration-style: solid;
   text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
 }
+cite {
+  font-style: italic;
+}
 p,
 nav,
 ul {
