@@ -56,8 +56,8 @@ ul {
 nav ul {
   padding: 0;
 }
-ul li:last-child ul:last-child {
-  padding: 0;
+ul ul {
+  padding-bottom: 0;
 }
 
 /* ===== LAYOUT STYLES ===== */
