@@ -152,8 +152,8 @@ ul ul {
 @media screen and (min-width: 27.75em) {
   #contact li {
     flex: 1 0 max-content;
-    text-align: center;
     max-width: 16.6666666667em; /* 300 / 18 = 16.6666666667 */
+    text-align: center;
   }
 }
 
@@ -167,12 +167,12 @@ ul ul {
 
 /* 1048 /16 = 65.5 */
 @media screen and (min-width: 65.5em) {
+  #contact {
+    margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  }
   #info {
     display: flex;
     justify-content: center;
-  }
-  #contact {
-    margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */
   }
 }
 
@@ -184,7 +184,7 @@ ul ul {
   }
   #navigation li {
     flex: 1 0 max-content;
-    text-align: center;
     max-width: 8.3333333333em; /* 150 / 18 = 8.3333333333 */
+    text-align: center;
   }
 }
