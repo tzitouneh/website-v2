@@ -48,7 +48,10 @@ a {
 cite {
   font-style: italic;
 }
-
+figure {
+  padding: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+  padding-bottom: 0;
+}
 p,
 nav,
 ul {
