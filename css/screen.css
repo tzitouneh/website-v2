@@ -146,33 +146,39 @@ ul ul {
 /* Context is ALWAYS 16px for Media Queries */
 
 /* 610 / 16 = 38.125 */
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 450px) {
+
+  #contact li {
+    flex: 1 0 max-content;
+    text-align: center;
+    max-width: 300px;
+  }
+}
+
+/* 970 / 16 = 60.625 */
+@media screen and (min-width: 680px) {
   #contact ul {
     display: flex;
     justify-content: center;
   }
-  #contact ul > li {
-    flex: 1 0 auto;
-    text-align: center;
-  }
 }
-/* 970 / 16 = 60.625 */
-@media screen and (min-width: 1050px) {
-  #contact {
+@media screen and (min-width: 1048px) {
+  #info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
-  #contact a {
+  #contact {
     margin-top: -1.3333333333em; /* 24 / 18 = 1.3333333333 */
   }
 }
+
 /* 420 / 16 = 26.25 */
 @media screen and (min-width: 444px) {
   #navigation ul {
     display: flex;
     justify-content: center;
   }
-  #navigation ul > li {
+  #navigation li {
     flex: 1 0 max-content;
     text-align: center;
     max-width: 150px;
