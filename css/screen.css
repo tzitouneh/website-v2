@@ -45,10 +45,6 @@ a {
   text-decoration-style: solid;
   text-decoration-thickness: 0.05555555556em; /* 1 / 18 = 0.05555555556 */
 }
-figcaption {
-  padding-bottom: 1.3333333333em; /* 24 / 18 = 1.3333333333 */
-  position: static;
-}
 p,
 nav,
 ul {
